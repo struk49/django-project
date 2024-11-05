@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-p3@3p^l!%0q(gzh%zwhct7761cffu!nju*%sn19x976%1b=$s&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-struk49-djangoproject-g2fsboph6t5.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-struk49-djangoproject-wd24k5kwlaw.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -71,6 +71,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'my_project.wsgi.application'
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'Strict'
+CSRF_TRUSTED_ORIGINS = ['https://8000-struk49-djangoproject-wd24k5kwlaw.ws.codeinstitute-ide.net']
+
 
 
 # Database
