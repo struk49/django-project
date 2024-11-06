@@ -1,6 +1,21 @@
 h1 {
     font-size: 72px;
     font-weight: bolder;
-    color: goldenrod;
+    color: black;
 
+}
+
+h2 {
+    color: blue;
+    font-size: large;
+    font-weight: 800;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: larger;
+    color: black;
+    padding: 5px;
+    
 }
