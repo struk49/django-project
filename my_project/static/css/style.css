@@ -11,11 +11,10 @@ h2 {
     font-weight: 800;
 }
 
-table, th, td {
-    border: 3px solid black;
-    border-collapse: collapse;
+.users_list li {
     font-size: larger;
     color: black;
-    padding: 5px;
-    
+    padding: 5px; 
+
 }
+

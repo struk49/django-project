@@ -6,7 +6,7 @@ django.setup()
 
 ##Fake population script
 import random
-from myfirst_app.models import AccessRecord, Webpage, Topic
+from myfirst_app.models import AccessRecord, Webpage, Topic, User
 from faker import Faker
 
 fakegen = Faker()
@@ -28,6 +28,14 @@ def populate(N=5):
         fake_url = fakegen.url()
         fake_date = fakegen.date()
         fake_name = fakegen.company()
+        fake_names = fakegen.name().split()
+        fake_first_name = fake_name[0]
+        fake_last_name = fake_name[1]
+        fake_email = fakegen.email()
+    
+
+    user = User.objects.get_or_create(first_name=fake_first_name,
+                            last_name=fake_last_name, email=fake_email)[0]
 
 
     ## create the new webpage entry
